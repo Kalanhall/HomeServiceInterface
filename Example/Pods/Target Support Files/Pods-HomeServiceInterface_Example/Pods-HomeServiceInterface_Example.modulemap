@@ -1,0 +1,6 @@
+framework module Pods_HomeServiceInterface_Example {
+  umbrella header "Pods-HomeServiceInterface_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

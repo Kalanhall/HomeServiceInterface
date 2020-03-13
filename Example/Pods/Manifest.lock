@@ -1,0 +1,16 @@
+PODS:
+  - HomeServiceInterface (0.1.0)
+
+DEPENDENCIES:
+  - HomeServiceInterface (from `../`)
+
+EXTERNAL SOURCES:
+  HomeServiceInterface:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HomeServiceInterface: a5eb6ab61ef30f86463618f9f78ed86a1dcfd393
+
+PODFILE CHECKSUM: efa84602344a9a9ece028a4531370c7e84d0d3de
+
+COCOAPODS: 1.8.3
