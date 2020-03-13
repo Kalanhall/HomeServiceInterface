@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HomeServiceInterface_Example' do
+  pod 'HomeServiceInterface', :path => '../'
+
+  target 'HomeServiceInterface_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
