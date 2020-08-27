@@ -5,13 +5,14 @@
 //  Created by Logic on 2020/3/13.
 //
 
-@_exported import KLServer
+@_exported import CTMediator
 
-public extension KLServer {
-    @objc public func fetchHomeViewController(with parameters:  NSDictionary?) -> UIViewController {
+public extension CTMediator {
+    @objc func fetchHomeViewController(with parameters:  NSDictionary?) -> UIViewController {
         var params = (parameters ?? [:]) as! [AnyHashable : Any]
-        params.updateValue("HomeService", forKey: kKLServerParamsKey)
-        if let vc = self.performService("HomeService", task: "nativeToFetchHomeViewController", params: params, shouldCacheService: false) as? UIViewController {
+        params.updateValue("HomeService", forKey: kCTMediatorParamsKeySwiftTargetModuleName)
+        
+        if let vc = self.performTarget("HomeService", action: "nativeToFetchHomeViewController", params: params, shouldCacheTarget: false) as? UIViewController {
             return vc
         }
         return UIViewController()
